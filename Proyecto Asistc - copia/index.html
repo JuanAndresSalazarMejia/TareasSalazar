@@ -1,0 +1,131 @@
+Código Inicial HTML:
+<!DOCTYPE html> <!-- Define que trabajaremos una estructura HTML -->
+<html lang="es"> <!-- Indica el lenguaje que usa la pagina-->
+
+<head> <!-- Inicio de la cabecera del sitio web-->
+    <meta charset="UTF-8"> <!--declara la codificación de caracteres del documento HTML-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- hace que una página web sea responsive o en ptras palabras adaptable  -->
+    <title>Asistec</title> <!-- Le da un titulo a la pagina -->
+
+    <!-- Bootstrap CSS -->
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Sirve para importar la hoja de estilos (CSS) -->
+</head> <!-- Cierra el apartado del encabezado HTML -->
+
+<body> <!-- Inicia el apartado HTML para agregar el cuerpo de la pagina -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Asistec</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-light text-dark text-center py-5" id="inicio">
+        <div class="container">
+            <h1 class="display-4">Bienvenido a nuestro programa digital (Asistec)</h1>
+            <p class="lead"> Con ayuda de este podras automatizar el proceso de la toma de asistencia, y tener
+                informacion puntual sobre las personas que lo utilizan.</p>
+            <a class="btn btn-primary btn-lg" href="#servicios">Saber más</a>
+        </div>
+
+
+
+        <!-- Contenido Destacado -->
+        <section class="container py-5" id="servicios">
+            <div class="row">
+                <!-- Tarjeta 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/bio.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Moderniza tu empresa con nuestro sistema</h5>
+                            <p class="card-text">Por medio de este programa lograras automatizar el proceso de las
+                                listas en las diferentes reuniones realizad.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 2 (replicar según necesidad) -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/es.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Usa una forma mas practica</h5>
+                            <p class="card-text">Con nuestro sistema, podras tener una base de datos detallada, con
+                                informacion de las diferentes personas que asistan a tus reuniones.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Targeta tres-->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/re.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Automatiza el proceos</h5>
+                            <p class="card-text">Gracias a este sofisticado programa podras evitar tareas tediosas a la
+                                hora de recolectar datos de las personas que asistan a tus reuniones por medio de
+                                asistencias, teniendo la informacion a mano de una forma mucho mas sensilla.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nosotros -->
+        <section class="bg-secondary text-white py-5" id="nosotros">
+            <div class="container text-center">
+                <h2>Sobre Nosotros</h2>
+                <p>Detras de este proyecto, se encuentra un gran grupo de trabajo, el cual por medio de sofisticados
+                    programas y herramientas obtuvo como resultado este sistema, ofreciendo asi un servicio excepcional
+                    a todos nuestros clientes para que vivan la mejor experiencia a nuestro lado.</p>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="container py-5" id="contacto">
+            <h2>Si tienes alguna dida ontáctanos</h2>
+            <form>
+                <input type="text" class="form-control mb-3" placeholder="Nombre">
+                <input type="email" class="form-control mb-3" placeholder="Email">
+                <textarea class="form-control mb-3" placeholder="Mensaje"></textarea>
+                <button class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-3">
+            &copy; 2025 Asistec | Todos los derechos reservados.
+        </footer>
+
+
+
+    </header>
+
+
+
+
+
+</body> <!-- Cierra el cuerpo de la pagina -->
+
+</html> <!-- Cierra el HTML -->
